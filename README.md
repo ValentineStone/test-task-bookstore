@@ -8,10 +8,15 @@ A sample bookstore app on `Laravel` & `preact`
 2. Cd into the project folder  
 `cd test-task-bookstore`
 
-3. Setup your `.env`
-
-4. Install composer packages  
+3. Install composer packages  
 `composer install`
+
+4. Setup your `.env`
+    1. Copy `.env.example` to `.env`  
+    `cp .env.example .env`
+    2. Generate your app encryption key  
+    `php artisan key:generate`
+    3. Setup your database and any other options
 
 5. Install npm packages  
 `npm install`
