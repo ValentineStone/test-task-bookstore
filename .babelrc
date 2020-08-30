@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "@babel/plugin-syntax-jsx",
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "h",
+      "pragmaFrag": "Fragment"
+    }],
+    ["@babel/plugin-proposal-class-properties", {
+      "loose" : true
+    }],
+    ["auto-import", {
+        "declarations": [
+          { "members": ["h", "render", "Fragment", "Component"], "path": "preact" }
+        ]
+      }
+    ]
+  ]
+}
